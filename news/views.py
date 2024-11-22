@@ -81,7 +81,8 @@ class Create_post(CreateView):
 class Edit_post(UpdateView):
     model=New
     template_name= 'editpage.html'
-    fields=['title','text'] 
+    fields=['category', 'region', 'title', 'text', 'image', 'author'] 
+
 class Delete_post(DeleteView):
     model=New
     template_name= 'deletepage.html'
