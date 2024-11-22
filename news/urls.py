@@ -13,5 +13,8 @@ urlpatterns = [
     path('all-regions', all_region, name='all-region'),
     path('create-post/new', Create_post.as_view(), name='create-post'),
     path('logout', user_logout, name='logout'),
+    path('edit_post/<int:pk>/edit', Edit_post.as_view(), name= 'editpost'),
+    path('delete_post/<int:pk>/delete', Delete_post.as_view(), name='deletepost'),
+
     
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

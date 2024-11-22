@@ -4,17 +4,11 @@
 <html>
 <head>
     <title>{% block title %}Yangiliklar web sayti{% endblock %}</title>
-    <!-- Bootstrap 4 CSS -->
     <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}" />
-    <!-- Main jQuery -->
     <script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
-    <!-- Bootstrap Js -->
     <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
 </head>
 <body>
-    <!-- Authenticated User Message -->
-
-    <!-- Top Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
         <div class="container">
             <a class="navbar-brand" href="{% url 'home' %}">Yangiliklar web sayti</a>
